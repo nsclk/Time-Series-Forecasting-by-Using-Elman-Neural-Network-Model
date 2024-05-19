@@ -16,7 +16,7 @@ library(lubridate)
 library(utils)
 
 # Data Retrieval
-hour_req <- "https://marketdata.tradermade.com/api/v1/timeseries?currency=EURUSD&api_key=API_KEY&start_date=2024-05-08-08:00&end_date=2024-05-17-07:00&format=records&interval=hourly"
+hour_req <- "https://marketdata.tradermade.com/api/v1/timeseries?currency=EURUSD&api_key="API_KEY"&start_date=2024-05-08-08:00&end_date=2024-05-17-07:00&format=records&interval=hourly"
 
 data_hour_raw <- GET(url = hour_req)
 data_hour_text <- content(data_hour_raw, "text", encoding = "UTF-8")
